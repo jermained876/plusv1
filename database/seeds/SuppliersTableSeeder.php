@@ -12,9 +12,9 @@ class SuppliersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Supplier::class,1)->create(["Supplier_Code"=>"WAB"]);
-        factory(Supplier::class,1)->create(["Supplier_Code"=>"WAF"]);
-        factory(Supplier::class,1)->create(["Supplier_Code"=>"WAC"]);
-        factory(Supplier::class,1)->create(["Supplier_Code"=>"WAM"]);
+        factory(Supplier::class,1)->create(["supplier_code"=>"WAB"]);
+        factory(Supplier::class,1)->create(["supplier_code"=>"WAF"]);
+        factory(Supplier::class,1)->create(["supplier_code"=>"WAC"]);
+        factory(Supplier::class,1)->create(["supplier_code"=>"WAM"]);
     }
 }

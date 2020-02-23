@@ -15,8 +15,8 @@ class CreateDevicesTable extends Migration
     {
         Schema::create('devices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Name');
-            $table->string('Slug');
+            $table->string('name');
+            $table->string('slug');
             $table->string('manufacturer_id');
             $table->timestamps();
         });

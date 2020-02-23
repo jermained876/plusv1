@@ -15,7 +15,7 @@ class ProductsTableSeeder extends Seeder
     {
         factory(Image::class,100)->create()->each( function($image){
             factory(Product::class,1)->create([
-                "Image_id" => $image->id,
+                "image_id" => $image->id,
             ]);
         });
     }

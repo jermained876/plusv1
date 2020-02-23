@@ -21,32 +21,32 @@ class TypesTableSeeder extends Seeder
             "Slug" => "Cables-&-Chargers"
         ]);
         Type::create([
-            "Name" => "Cases",
-            "Slug" => "Cases"
+            "name" => "Cases",
+            "slug" => "Cases"
         ]);
         Type::create([
-            "Name" => "Holders & Mounts",
-            "Slug" => "Holders-&-Mounts"
+            "name" => "Holders & Mounts",
+            "slug" => "Holders-&-Mounts"
         ]);
         Type::create([
-            "Name" => "Powerbanks",
-            "Slug" => "Powerbanks"
+            "name" => "Powerbanks",
+            "slug" => "Powerbanks"
         ]);
         Type::create([
-            "Name" => "Storage",
-            "Slug" => "Storage"
+            "name" => "Storage",
+            "slug" => "Storage"
         ]);
         Type::create([
-            "Name" => "Tools & Parts",
-            "Slug" => "Tools-&-Parts"
+            "name" => "Tools & Parts",
+            "slug" => "Tools-&-Parts"
         ]);
         Type::create([
-            "Name" => "Phone",
-            "Slug" => "Phone"
+            "name" => "Phone",
+            "slug" => "Phone"
         ]);
         Type::create([
-            "Name" => "Other",
-            "Slug" => "Other"
+            "name" => "Other",
+            "slug" => "Other"
         ]);
     }
 }

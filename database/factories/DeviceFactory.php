@@ -11,8 +11,8 @@ $factory->define(Device::class, function (Faker $faker) {
     $name = $faker->word;
     return [
 
-        'Name'=>$name,
-        'Slug'=> Str::slug($name,'-'),
+        'name'=>$name,
+        'slug'=> Str::slug($name,'-'),
         'manufacturer_id'=>function(){
            return Manufacturer::all()->random();
         }

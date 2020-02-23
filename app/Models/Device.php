@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Device extends Model
 {
-    //
+    public function products(){
+        return $this->hasMany(Product::class);
+    }
+
+    public function manufacturers(){
+        return $this->belongsTo(Manufacturer::class);
+    }
 }

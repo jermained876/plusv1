@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
@@ -13,5 +14,10 @@ class Role extends Model
         static::creating(function($role){
 
         });
+    }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
     }
 }

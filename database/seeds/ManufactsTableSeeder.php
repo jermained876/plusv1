@@ -13,28 +13,28 @@ class ManufactsTableSeeder extends Seeder
     public function run()
     {
         Manufacturer::create([
-            "Name" => "Alcatel",
-            "Slug" => "Alcatel"
+            "name" => "Alcatel",
+            "slug" => "Alcatel"
         ]);
         Manufacturer::create([
-            "Name" => "Apple",
-            "Slug" => "Apple"
+            "name" => "Apple",
+            "slug" => "Apple"
         ]);
         Manufacturer::create([
-            "Name" => "Huawei",
-            "Slug" => "Huawei"
+            "name" => "Huawei",
+            "slug" => "Huawei"
         ]);
         Manufacturer::create([
-            "Name" => "LG",
-            "Slug" => "LG"
+            "name" => "LG",
+            "slug" => "LG"
         ]);
         Manufacturer::create([
-            "Name" => "Samsung",
-            "Slug" => "Samsung"
+            "name" => "Samsung",
+            "slug" => "Samsung"
         ]);
         Manufacturer::create([
-            "Name" => "ZTE",
-            "Slug" => "ZTE"
+            "name" => "ZTE",
+            "slug" => "ZTE"
         ]);
     }
 }

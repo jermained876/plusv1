@@ -15,8 +15,8 @@ class CreateManufacturersTable extends Migration
     {
         Schema::create('manufacturers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Name');
-            $table->string('Slug');
+            $table->string('name');
+            $table->string('slug');
             $table->timestamps();
         });
     }

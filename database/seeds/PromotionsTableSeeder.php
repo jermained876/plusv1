@@ -13,17 +13,17 @@ class PromotionsTableSeeder extends Seeder
     public function run()
     {
         Promotion::create([
-            "Name" => "None",
-            "Slug" => "None"
+            "name" => "None",
+            "slug" => "None"
         ]);
 
         Promotion::create([
-            "Name" => "BUY 1 GET 1 FREE",
-            "Slug" => "BUY-1-GET-1-FREE"
+            "name" => "BUY 1 GET 1 FREE",
+            "slug" => "BUY-1-GET-1-FREE"
         ]);
         Promotion::create([
-            "Name" => "50 % OFF",
-            "Slug" => "50-%-OFF"
+            "name" => "50 % OFF",
+            "slug" => "50-%-OFF"
         ]);
     }
 }
