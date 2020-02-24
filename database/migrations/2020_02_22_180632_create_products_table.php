@@ -22,7 +22,6 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('device_id');
             $table->unsignedBigInteger('promotion_id');
             $table->unsignedBigInteger('type_id');
-            $table->unsignedBigInteger('image_id');
             $table->timestamps();
         });
     }

@@ -28,9 +28,6 @@ $factory->define(Product::class, function (Faker $faker) {
        'device_id'=> function(){
             return Device::all()->random();
         },
-       'image_id'=> function(){
-            return Image::all()->random();
-        },
 
        'promotion_id'=> function(){
         return Promotion::all()->random();

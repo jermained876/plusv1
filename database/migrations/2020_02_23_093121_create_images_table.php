@@ -17,6 +17,7 @@ class CreateImagesTable extends Migration
             $table->bigIncrements('id');
             $table->string('slug');
             $table->string('name');
+            $table->unsignedBigInteger('product_id');
             $table->string('image_url');
             $table->timestamps();
         });

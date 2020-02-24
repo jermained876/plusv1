@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class Test extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -44,9 +43,9 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id)
     {
-        return $product;
+        //
     }
 
     /**
