@@ -4,9 +4,11 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import Home from "../components/HomePage/home.vue"
+import product from "../components/Product/productcontainer.vue"
 
 const routes = [
-    { path: '/home', component: Home, name:'home' }
+    { path: '/home', component: Home, name:'home' },
+    { path: '/product', component: product, name:'product' },
 
   ]
 
