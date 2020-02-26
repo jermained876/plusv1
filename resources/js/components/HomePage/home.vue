@@ -8,10 +8,9 @@
 
       <div class="col-lg-9">
     <home-container v-if="homecontainer"></home-container>
-    <category-container v-if="categorycontainer"></category-container>
+    <category-container v-if="categorycontainer" :catdata="catdata"></category-container>
     <product-container v-if="productcontainer"></product-container>
       </div>
-
 
     </div>
     <!-- /.row -->
@@ -32,7 +31,8 @@ data(){
             return {
                 homecontainer:true,
                 productcontainer:false,
-                categorycontainer:true
+                categorycontainer:true,
+                catdata:{}
 
                     }
 },
@@ -45,19 +45,27 @@ methods:{
             openCategoryContainer(){
                 this.clearAllContainer();
                 this.categorycontainer=true;
+            },
+              openHomeContainer(){
+                this.clearAllContainer();
+                this.homecontainer=true;
             }
 
 },
 
 created() {
     EventBus.$on('SelectCat',(item)=>{console.log(item+"here")
-    axios.get('/api/category/'+item).then((res)=>console.log(res.data)).catch((error)=>console.log(error))
-    this.openCategoryContainer()
+    axios.get('/api/category/'+item).then((res)=>{console.log(res.data)
+    this.catdata=res.data
+    }).catch((error)=>console.log(error))
+    this.openCategoryContainer()})
 
-
-    })
+    
 
 },
+mounted(){
+ 
+}
 }
 </script>
 
