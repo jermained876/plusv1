@@ -2,7 +2,7 @@
 
 
 
-<div class="card text-danger  mb-3" >
+<div class="card text-dark  mb-3" >
   <div class="card-header font-weight-bold text-white bg-danger ">Product Category</div>
 
    <ul class="list-group">

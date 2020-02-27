@@ -1,23 +1,19 @@
 <template>
 <div>
-  <h4 class="font-weight-bold">{{catdata.name}}</h4>
+  <h4 class="font-weight-bold">NEW PRODUCTS</h4>
  
-    <div class="row" v-if="products">
-        <pdetail v-for="product in products" :key="product.id" :item="product"></pdetail>
+   <div class="row" v-if="newsectiondata">
+        <pdetail v-for="product in newsectiondata" :key="product.id" :item="product"></pdetail>
     </div>
-
-
-
 </div>
 </template>
 
 <script>
-
+import Carousel from "../carousel/carousel"
 import pdetail from '../Product/productdetails'
 export default {
-    
-    props:['catdata'],
-    components:{pdetail},
+    props:['newsectiondata'],
+    components:{Carousel,pdetail},
     data(){
         return {
             products:{}
@@ -30,7 +26,8 @@ export default {
     },
     mounted() {
        this.products=this.catdata.products 
-    },
+    }
+
 
 }
 </script>
